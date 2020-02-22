@@ -49,9 +49,6 @@
       $arrPostData['messages'][0]['text'] = 'Ninja-Thank you.';
       $arrPostData['messages'][1]['type'] = "text";
       $arrPostData['messages'][1]['text'] = 'second Ninja-Thank you.';
-      $arrPostData['messages'][2]['type'] = "action";
-      $arrPostData['messages'][2]['action']['type']= 'cameraRoll';
-      $arrPostData['messages'][2]['action']['label']= 'send photo';
       
     }
   }
