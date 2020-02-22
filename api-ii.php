@@ -47,6 +47,9 @@
       $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
       $arrPostData['messages'][0]['type'] = "text";
       $arrPostData['messages'][0]['text'] = 'Ninja-Thank you.';
+      $arrPostData['messages'][1]['type'] = "text";
+      $arrPostData['messages'][1]['text'] = 'second Ninja-Thank you.';
+
     }
   }
   else
