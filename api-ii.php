@@ -1,6 +1,6 @@
 <?php
 
-  $strAccessToken = "+t5E3u2f0eW3JKhGPyKqGX4M1M6uuvErtuexSZn6D3017/ONS2n+Nqc3KjF37A0K4tv3QZ0BD6kyrzoCXmKa+L2ys817BnmeTwqXPujiaX9+yEpjMBxT2OH60T4W41rZXsUqJ6QidfaesO3AOAb93wdB04t89/1O/w1cDnyilFU=";
+  $strAccessToken = "49D8U1OE7aQPIW+Wrz6/iRK7Bm7PGZV31W7Lvet4gXZ2fo4TASGRnLoNFDunzxHmHqWfJffvPoNPVYuBD/Ty5Fu89raphr84CePUIk3b4sgsm+b9or0QlJPIWPrre2VadT0R3JYwyi6Um7FT2ZtyGwdB04t89/1O/w1cDnyilFU=";
   
   $content = file_get_contents('php://input');
   $arrJson = json_decode($content, true);
@@ -13,7 +13,7 @@
   $_msg = $arrJson['events'][0]['message']['text'];
 
 
-  $api_key="xX3Bhqg9gp1ds9yfrPfgzaa8BlYS2igP";
+  $api_key="bfed2bd21437ffc0a3adaaf287c9a27f";
   $url = 'https://api.mongolab.com/api/1/databases/data/collections/datas?apiKey='.$api_key.'';
   $json = file_get_contents('https://api.mongolab.com/api/1/databases/data/collections/datas?apiKey='.$api_key.'&q={"question":"'.$_msg.'"}');
   $data = json_decode($json);
