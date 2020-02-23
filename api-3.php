@@ -52,8 +52,10 @@
       $arrPostData['messages'][2]['type'] = "image";
       $arrPostData['messages'][2]['originalContentUrl'] = 'https://www.googreens.com/img/man.png';
       $arrPostData['messages'][2]['previewImageUrl'] = 'https://www.googreens.com/img/man.png';
-      
-    }
+      $arrPostData['messages'][3]['type'] = 'imagemap';
+      $arrPostData['messages'][3]['baseUrl'] = 'https://1.bp.blogspot.com/-U90M8DyKu7Q/W9EtONMCf6I/AAAAAAAAW_4/7L_jB_Rg9oweu2HKhULNdu9WNefw9zf9wCLcBGAs/s1600/sapo-full.jpg';
+      $arrPostData['messages'][3]['altText'] = 'This is an imagemap';
+  
   }
   else
   {
