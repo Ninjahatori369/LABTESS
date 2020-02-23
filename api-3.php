@@ -45,14 +45,56 @@
       $returnValue = file_get_contents($url,false,$context);
       $arrPostData = array();
       $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-      $arrPostData['messages'][0]['type'] = "text";
-      $arrPostData['messages'][0]['text'] = 'Ninja-Thank you.';
-      $arrPostData['messages'][1]['type'] = "text";
-      $arrPostData['messages'][1]['text'] = 'second Ninja-Thank you.';
-      $arrPostData['messages'][2]['type'] = "image";
-      $arrPostData['messages'][2]['originalContentUrl'] = 'https://www.googreens.com/img/man.png';
-      $arrPostData['messages'][2]['previewImageUrl'] = 'https://www.googreens.com/img/man.png';
-      
+      $arrPostData['messages'] =
+        array (
+  'type' => 'imagemap',
+  'baseUrl' => 'https://1.bp.blogspot.com/-U90M8DyKu7Q/W9EtONMCf6I/AAAAAAAAW_4/7L_jB_Rg9oweu2HKhULNdu9WNefw9zf9wCLcBGAs/s1600/',
+  'altText' => 'This is an imagemap',
+  'baseSize' => 
+            array (
+              'width' => 1040,
+              'height' => 1040,
+            ),
+            'actions' => 
+            array (
+              0 => 
+              array (
+                'type' => 'message',
+                'area' => 
+                array (
+                  'x' => 0,
+                  'y' => 0,
+                  'width' => 513,
+                  'height' => 641,
+                ),
+                'text' => 'Action 1',
+              ),
+              1 => 
+              array (
+                'type' => 'message',
+                'area' => 
+                array (
+                  'x' => 513,
+                  'y' => 2,
+                  'width' => 527,
+                  'height' => 349,
+                ),
+                'text' => 'Action 2',
+              ),
+              2 => 
+              array (
+                'type' => 'message',
+                'area' => 
+                array (
+                  'x' => 509,
+                  'y' => 351,
+                  'width' => 531,
+                  'height' => 292,
+                ),
+                'text' => 'Action 3',
+              ),
+            ),
+          );
     }
   }
   else
