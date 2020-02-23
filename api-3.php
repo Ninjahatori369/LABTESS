@@ -45,8 +45,7 @@
       $returnValue = file_get_contents($url,false,$context);
       $arrPostData = array();
       $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-      $arrPostData['messages'] =
-        array (
+      $arrPostData['messages'] => array (
   'type' => 'imagemap',
   'baseUrl' => 'https://1.bp.blogspot.com/-U90M8DyKu7Q/W9EtONMCf6I/AAAAAAAAW_4/7L_jB_Rg9oweu2HKhULNdu9WNefw9zf9wCLcBGAs/s1600/',
   'altText' => 'This is an imagemap',
