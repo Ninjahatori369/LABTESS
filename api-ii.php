@@ -50,8 +50,8 @@
       $arrPostData['messages'][1]['type'] = "text";
       $arrPostData['messages'][1]['text'] = 'second Ninja-Thank you.';
       $arrPostData['messages'][2]['type'] = "image";
-      $arrPostData['messages'][2]['"originalContentUrl'] = 'https://www.googreens.com/img/man.png';
-      $arrPostData['messages'][2]['"previewImageUrl'] = 'https://www.googreens.com/img/man.png';
+ //     $arrPostData['messages'][2]['"originalContentUrl'] = 'https://www.googreens.com/img/man.png';
+ //     $arrPostData['messages'][2]['"previewImageUrl'] = 'https://www.googreens.com/img/man.png';
       
     }
   }
